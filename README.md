@@ -1,16 +1,128 @@
-## Hi there 👋
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>megkirscoach — Ссылки и Контакты</title>
+    <style>
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            background: linear-gradient(135deg, #0f172a 0%, #1e1b4b 100%);
+            color: #ffffff;
+            display: flex;
+            justify-content: center;
+            padding: 40px 20px;
+            min-height: 100vh;
+        }
+        .container {
+            width: 100%;
+            max-width: 480px;
+            text-align: center;
+        }
+        .avatar {
+            width: 96px;
+            height: 96px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-bottom: 16px;
+            border: 3px solid rgba(255, 255, 255, 0.2);
+        }
+        h1 { font-size: 22px; font-weight: 700; margin-bottom: 8px; }
+        .username { font-size: 16px; color: #38bdf8; margin-bottom: 12px; font-weight: 500; }
+        .bio { font-size: 14px; color: #94a3b8; margin-bottom: 32px; line-height: 1.5; }
+        
+        /* Стили для видео */
+        .video-container {
+            width: 100%;
+            border-radius: 16px;
+            overflow: hidden;
+            margin-bottom: 32px;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+            background: #000;
+        }
+        video { width: 100%; display: block; }
 
-<!--
-**megkirscoach/megkirscoach** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+        /* Кнопки-ссылки */
+        .links-list { display: flex; flex-direction: column; gap: 16px; }
+        .link-btn {
+            display: block;
+            padding: 16px;
+            background: rgba(255, 255, 255, 0.08);
+            border: 1px solid rgba(255, 255, 255, 0.15);
+            color: #ffffff;
+            text-decoration: none;
+            border-radius: 12px;
+            font-size: 16px;
+            font-weight: 600;
+            transition: all 0.2s ease;
+        }
+        .link-btn:hover {
+            background: rgba(255, 255, 255, 0.2);
+            transform: translateY(-2px);
+        }
+        
+        /* Цвета для китайских сервисов (работают без VPN) */
+        .cn-active {
+            background: rgba(255, 74, 86, 0.15);
+            border: 1px solid #ff4a56;
+        }
+        .cn-active:hover {
+            background: rgba(255, 74, 86, 0.3);
+        }
+        
+        /* Блеклый стиль для заблокированных в КНР сервисов */
+        .vpn-required {
+            opacity: 0.6;
+        }
+    </style>
+</head>
+<body>
 
-Here are some ideas to get you started:
+    <div class="container">
+        <!-- Аватарка (по умолчанию заглушка, позже можно заменить на свое фото) -->
+        <img class="avatar" src="https://unsplash.com" alt="Avatar">
+        
+        <!-- Имя и никнейм -->
+        <h1>megkirscoach</h1>
+        <p class="username">@megkirscoach</p>
+        <p class="bio">Добро пожаловать! Ниже вы найдете все мои актуальные социальные сети и контакты для связи.</p>
 
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
+        <!-- Встроенный видеоплеер (Пустое поле для вашего видео) -->
+        <div class="video-container">
+            <!-- Когда видео будет готово, вы просто загрузите его в GitHub и вставите имя файла в src="..." вместо пустых кавычек -->
+            <video controls poster="https://unsplash.com" src="">
+                Ваш браузер не поддерживает видео или файл еще не загружен.
+            </video>
+        </div>
+
+        <!-- Кнопки ссылок -->
+        <div class="links-list">
+            
+            <!-- РАБОТАЕТ В КИТАЕ БЕЗ VPN -->
+            <a href="mailto:megkirscoach@gmail.com" class="link-btn">
+                ✉️ Написать на Email (megkirscoach@gmail.com)
+            </a>
+            
+            <a href="#" class="link-btn cn-active" onclick="alert('Мой ник в Xiaohongshu (RED): megkirscoach. Скопируйте его и найдите меня в приложении!')">
+                📕 Xiaohongshu / РедНоут (ID: megkirscoach)
+            </a>
+            
+            <!-- ТРЕБУЕТСЯ VPN В КИТАЕ (для Европы и Америки работает отлично) -->
+            <a href="https://tiktok.com" target="_blank" class="link-btn vpn-required">
+                🎵 TikTok
+            </a>
+            
+            <a href="https://youtube.com" target="_blank" class="link-btn vpn-required">
+                📺 YouTube
+            </a>
+            
+            <a href="https://facebook.com" target="_blank" class="link-btn vpn-required">
+                👥 Facebook
+            </a>
+            
+        </div>
+    </div>
+
+</body>
+</html>
