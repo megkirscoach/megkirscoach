@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>megkirscoach — Ссылки и Контакты</title>
+    <title>megkirscoach — Links & Contacts</title>
     <style>
         * { box-sizing: border-box; margin: 0; padding: 0; }
         body {
@@ -32,7 +32,7 @@
         .username { font-size: 16px; color: #38bdf8; margin-bottom: 12px; font-weight: 500; }
         .bio { font-size: 14px; color: #94a3b8; margin-bottom: 32px; line-height: 1.5; }
         
-        /* Стили для видео */
+        /* Video styles */
         .video-container {
             width: 100%;
             border-radius: 16px;
@@ -43,7 +43,7 @@
         }
         video { width: 100%; display: block; }
 
-        /* Кнопки-ссылки */
+        /* Link buttons */
         .links-list { display: flex; flex-direction: column; gap: 16px; }
         .link-btn {
             display: block;
@@ -62,7 +62,7 @@
             transform: translateY(-2px);
         }
         
-        /* Цвета для китайских сервисов (работают без VPN) */
+        /* Highlight styling for China-accessible services */
         .cn-active {
             background: rgba(255, 74, 86, 0.15);
             border: 1px solid #ff4a56;
@@ -71,44 +71,43 @@
             background: rgba(255, 74, 86, 0.3);
         }
         
-        /* Блеклый стиль для заблокированных в КНР сервисов */
+        /* Visual cue for Western apps requiring VPN inside mainland China */
         .vpn-required {
-            opacity: 0.6;
+            opacity: 0.7;
         }
     </style>
 </head>
 <body>
 
     <div class="container">
-        <!-- Аватарка (по умолчанию заглушка, позже можно заменить на свое фото) -->
+        <!-- Profile Picture Placeholder -->
         <img class="avatar" src="https://unsplash.com" alt="Avatar">
         
-        <!-- Имя и никнейм -->
+        <!-- Name & Username -->
         <h1>megkirscoach</h1>
         <p class="username">@megkirscoach</p>
-        <p class="bio">Добро пожаловать! Ниже вы найдете все мои актуальные социальные сети и контакты для связи.</p>
+        <p class="bio">Welcome! Connect with me through my official social media channels and contacts below.</p>
 
-        <!-- Встроенный видеоплеер (Пустое поле для вашего видео) -->
+        <!-- Video Player (Empty placeholder for your upcoming video) -->
         <div class="video-container">
-            <!-- Когда видео будет готово, вы просто загрузите его в GitHub и вставите имя файла в src="..." вместо пустых кавычек -->
             <video controls poster="https://unsplash.com" src="">
-                Ваш браузер не поддерживает видео или файл еще не загружен.
+                Your browser does not support the video tag or the file is not uploaded yet.
             </video>
         </div>
 
-        <!-- Кнопки ссылок -->
+        <!-- Link Buttons -->
         <div class="links-list">
             
-            <!-- РАБОТАЕТ В КИТАЕ БЕЗ VPN -->
+            <!-- ACCESSIBLE IN CHINA WITHOUT VPN -->
             <a href="mailto:megkirscoach@gmail.com" class="link-btn">
-                ✉️ Написать на Email (megkirscoach@gmail.com)
+                ✉️ Email Me (megkirscoach@gmail.com)
             </a>
             
-            <a href="#" class="link-btn cn-active" onclick="alert('Мой ник в Xiaohongshu (RED): megkirscoach. Скопируйте его и найдите меня в приложении!')">
-                📕 Xiaohongshu / РедНоут (ID: megkirscoach)
+            <a href="#" class="link-btn cn-active" onclick="alert('My Xiaohongshu (RED) ID is: megkirscoach. Please copy it and search for me inside the app!')">
+                📕 Xiaohongshu / RED (ID: megkirscoach)
             </a>
             
-            <!-- ТРЕБУЕТСЯ VPN В КИТАЕ (для Европы и Америки работает отлично) -->
+            <!-- REQUIRES VPN IN MAINLAND CHINA (Works perfectly in Europe & America) -->
             <a href="https://tiktok.com" target="_blank" class="link-btn vpn-required">
                 🎵 TikTok
             </a>
@@ -126,3 +125,4 @@
 
 </body>
 </html>
+
